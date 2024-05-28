@@ -1,74 +1,79 @@
-# Horse Ranch Simulator
+# Horse Ranch Programming Task
 
-### Deadline
-Complete this assignment before the next class.
+**Deadline**: This assignment should be completed before the next exercise session.
 
-### Instructions
-For guidance on how to do and submit this exercise, please refer to the assignments section of the course webpage.
+**Instructions**: For guidelines on how to complete and submit the assignment, please refer to the assignments section of the course manual.
 
-### Preparation
-- Study the section on "Object-Oriented Programming" to understand the basics of Java classes, objects, and methods.
-- Refer to online resources or textbooks for additional information on getters and setters, constructor methods, and the `main` method in Java.
+**Preparation**:
+- Review Module 2: Looking Inside Classes from the course material.
+- Access the course material either through the Canvas course or directly via the course webpage.
 
-### Learning Goals
-After completing this task, you should be comfortable with:
-* Creating and using Java classes
-* Handling instance variables
-* Implementing constructors
-* Writing getter and setter methods
-* Understanding and using the `main` method in Java
-* Grasping the concept of scope and variable shadowing
+### Learning Objectives
+- Designing and defining Java classes.
+- Working with instance fields.
+- Implementing constructors.
+- Understanding getters and setters.
+- Utilizing the `main` method effectively.
+- Grasping the concept of scope and variable shadowing in Java.
 
-### Troubleshooting Guide
-1. First, check if other students have faced similar issues by looking at the course's online Q&A forum.
-2. If your problem is new, post your question on the forum. Make sure your question is specific and includes a clear description of the problem.
-3. Consult your TA during the lab session for immediate assistance.
+### Assignment Overview
 
-### Assignment
+In this programming task, you're going to model a Horse Ranch in Java. You will define a Java class to represent horses at a ranch, detailing their characteristics and behaviors.
 
-Imagine you're in the scenic countryside, tasked with managing a bustling horse ranch. Your job is to create a Java program that models the horses and their interactions at the ranch.
+### Task Description
 
-#### Horse.java
-Start by creating a Java file called `Horse.java`. This file will host the `Horse` class, encapsulating all the necessary attributes and behaviors of a horse.
+#### Task 1: Defining Your Horse Class
 
-Each horse should have the following attributes (variables):
-- `String` name
-- `int` age
-- `int` speed
-- `double` health
-- `boolean` trained
+Start by creating a new Java file named `Horse.java` within the `src` directory. This file will contain your `Horse` class definition. 
 
-Inside the `Horse` class, populate it with the appropriate Java code sections to reflect the attributes above. Begin by simply declaring these variables within the class scope but outside of any methods.
+1. Define the  `Horse` class with the following instance fields (but do not assign any values to them within the class):
+    - `String` name
+    - `int` age
+    - `String` breed
+    - `boolean` isTrained
+    - `double` speed
 
-#### Main Method and Object Creation
-Create a `main` method in `Horse.java`, where you will construct and manipulate instances of the `Horse` class. Start by creating a horse named "Blaze" with placeholder values for its attributes directly in the `main` method.
+2. In your `Horse` class, also include a `main` method for testing your code.
 
-#### Getters and Setters
-To adhere to good encapsulation practices, modify the access control of your horse attributes to private. Then, implement getter and setter methods for each attribute. These methods will control the access to the horse's attributes, allowing you to read and modify their values safely.
+#### Task 2: Constructing Horses
 
-#### Constructor
-Introduce a constructor method to the `Horse` class that allows for setting all of the horse's attributes at the time of its creation. Utilize this constructor in the `main` method to streamline the creation of your horse objects.
+Within the `main` method of the `Horse` class, create an instance of a Horse object. This object is constructed without any initial values.
 
-#### Displaying Horse Information
-Implement a method called `displayInfo()` in the `Horse` class. This method should print out all the horse's attributes in a friendly, readable format to the console.
+#### Task 3: Utilizing Fields and Constructors
 
-#### Horse Interactions: Speed Competition
-Now let's simulate a race! Create another method in the `Horse` class called `race` that accepts another `Horse` object as a parameter. The method should compare the `speed` attributes of the two horses, update their `health` based on the exertion of the race, and print out the winner. Implement logic to ensure that the race affects each horse's `health` appropriately.
+Turn the instance variables of your Horse class private to encapsulate the data. This will require using constructors, getters, and setters for manipulating these fields.
 
-#### Finalizing Your Ranch Simulator
-Create two additional horse objects in your `main` method, assigning them different attribute values through the constructor. Test the `race` method by having them compete against each other.
+1. Provide a constructor for the Horse class that accepts arguments for each field and sets them accordingly.
+2. Implement getters and setters for each field following Java naming conventions.
 
-#### Understanding Scope: Variable Shadowing
-Review and comprehend the concept of variable shadowing within the context of class methods, particularly in constructors and setters. Understand how the `this` keyword can be used to distinguish between instance variables and method or constructor parameters.
+#### Task 4: Adding Horse Behaviors
 
-### Checklist
-- Created a `Horse` class with the specified attributes and access control.
-- Implemented getter and setter methods for all attributes.
-- Added a constructor to the `Horse` class for initializing new objects.
-- Created a method to display a horse's information.
-- Designed a method for simulating horse races and demonstrating interaction between horse objects.
-- Explored the concept of variable shadowing and the use of the `this` keyword.
+Implement methods within the Horse class to simulate behaviors or actions a horse might have, such as `gallop()` or `neigh()`. For this task, implement a method called `gallop()` that prints the horse's speed to the console.
 
-### Bugs and Errors
+#### Task 5: Modeling Horse Interactions
 
-Report any inconsistencies or errors found in this exercise on the course's Q&A forum. Contributions to refining this assignment are appreciated and acknowledged in the course materials.
+Create a method to simulate horse interactions, for example; `race()`. The `race()` method should accept another Horse object as an argument and compare their speeds. Print out the faster horse to the console.
+
+#### Task 6: Printing Horse Information
+
+Add a method named `printInfo()` to your Horse class. This method should print all details of the horse (name, age, breed, trained status, and speed) to the console.
+
+#### Task 7: Scope and Variable Shadowing
+
+Prepare to discuss examples of variable shadowing and how the `this` keyword in Java can be used to differentiate between instance variables and parameters with the same name.
+
+### Submission Checklist
+- Implement the `Horse` class with the specified fields.
+- Incorporate a constructor for initializing horse objects.
+- Create getters and setters for each field in the Horse class.
+- Define the `gallop()` and `race()` methods as described.
+- Ensure the `printInfo()` method accurately displays the horse's attributes.
+- Be ready to discuss scope and variable shadowing in Java.
+
+### Help and Support
+
+If you encounter any issues or have questions:
+1. Consult the FAQ section on the course page.
+2. If your question remains unanswered, open a new issue on the course help forum with a descriptive title.
+
+Should you identify any inconsistencies or errors in this task, kindly report them through the course's help forum. Your feedback is valuable for improving future iterations of this task.
