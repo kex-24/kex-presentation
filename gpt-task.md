@@ -1,75 +1,60 @@
-# My Little Pony, Java Unleashed!
+# Custom Programming Task: Space Explorer
+
+## Overview
+You are tasked with modeling objects in Java to simulate space exploration. This project will familiarize you with Java classes, allowing you to explore core programming concepts. This time, we're embarking on a journey not into the mythical realm but into the vast universe. Your mission is to model space vehicles and celestial bodies.
 
 ## Deadline
-The assignment is due by the end of next week's exercise session.
+Complete and submit this task before the next class session.
 
 ## Instructions
-Make sure you follow the assignment submission instructions detailed in the course documents. The instructions cover how to format and where to submit your assignment.
+Refer to the course instructions on how to complete and submit assignments. If unsure, consult the assignments section of the course portal or ask your instructor.
 
 ## Preparation
-Read and work through all questions in the module on Object-Oriented Programming focusing on classes and objects. Do not hesitate to consult additional resources or ask TAs if you're having trouble with the concepts.
+- Review Module 2: Looking Inside Classes, focusing on class design, constructors, getters and setters, and method overloading.
+- Read relevant sections from Java documentation or any Java textbook recommended by your instructor.
 
-## Learning Goals
-- Understand and implement Java classes.
-- Work with instance variables.
-- Utilize constructors for object instantiation.
-- Implement getter and setter methods.
-- Manipulate objects using methods.
-- Comprehend the principle of encapsulation in Java.
-- Understand object interaction within a program.
+## Learning Objectives
+By completing this task, you will achieve the following learning objectives:
+- Design Java classes to model complex systems.
+- Implement constructors, getters, and setters in classes.
+- Understand and utilize object interactions within Java programming.
+- Gain familiarity with the concept of method overloading and its applications.
 
-## Trouble?
-If you encounter problems, check if someone has already posted a similar issue. If not, create a new issue with a descriptive title and explanation of your problem. Assistance is always available at the weekly lab sessions.
+## Assignment Description
 
-## Assignment
+### Universe Modeling
+You are to model space vehicles and celestial bodies in Java. Take creative liberty in deciding the attributes and behaviors of these entities. Reflect on what makes sense for a space vehicle (e.g., fuel level, speed, destination) and a celestial body (e.g., type, size, distance from Earth).
 
-In the whimsical land of Equestria, there exist magical creatures known as Ponies. Your task is to model these Ponies in Java. Imagine the characteristics and abilities these mystical beings possess and bring them to life through your programming skills.
+#### Space Vehicle Class
+1. Create a Java file named `SpaceVehicle.java`.
+2. Design a class that includes attributes such as name, fuel level, speed, and destination.
+3. Add a constructor method to initialize your space vehicles.
+4. Implement getters and setters for each attribute.
 
-### Getting Started
-Create a new Java file named `Pony.java` in your project's `src` directory. Begin by outlining your `Pony` class in this file.
+#### Celestial Body Class
+1. Create a Java file named `CelestialBody.java`.
+2. Design a class with appropriate attributes (e.g., name, type, size, distance).
+3. Include a constructor to set the initial state of celestial bodies.
+4. Provide getters and setters for managing attribute values.
 
-For the initial step, let's dive right into creating our first Pony! Implement a main method within your `Pony` class. Now, declare the following variables within the main method and assign initial values to them:
-- `String` name
-- `int` energyLevel
-- `int` magicPower
-- `int` happiness
-- `boolean` isFlying
+### Object Interaction: Exploring the Universe
+Your space vehicles will explore the universe by visiting various celestial bodies. Formulate a method in the Space Vehicle class for traveling, which will take a Celestial Body object as an argument. This method should simulate the travel by adjusting the vehicle's fuel level based on the distance to the destination and updating its current destination to the Celestial Body visited.
 
-Verify your code runs without errors before proceeding.
+### Space Vehicle Showdown: A Friendly Race
+Add functionality for two Space Vehicles to engage in a friendly race to a Celestial Body. This will require a method that compares the speeds of two vehicles and determines which one will arrive first based on distance and speed.
 
-### Adding More Ponies
-Next, let's introduce two more Ponies to our story. Similar to the first Pony, assign them unique attributes. This step highlights the repetitive and cumbersome aspect of manually creating each Pony with its own set of attributes.
-
-### Transition to Classes and Objects
-To overcome the limitations observed in manually managing each Pony, you'll now transition to using object-oriented principles. Define the instance variables (fields) related to a Pony outside the main method but within the class. These fields should not be instantiated with values yet.
-
-Inside the main method, instantiate a new Pony object. Use this object to assign values directly to its fields via the dot operator. This approach streamlines the process of object creation and management.
-
-### Encapsulating Pony Data
-To enhance data protection and integrity, modify the access modifiers of your fields to `private`. Then, implement getter and setter methods for each field. This practice, known as encapsulation, ensures controlled access to the object's data.
-
-### Constructors Are Magic
-To make Pony creation even more magical, introduce a constructor to your Pony class. Constructors allow for the direct assignment of values to an object's fields upon creation. Implement a constructor that accepts all necessary attributes as parameters.
-
-Create several Ponies using your constructor and verify that your objects are correctly instantiated.
-
-### Displaying Pony Information
-Instead of printing each Pony's attributes individually, implement a `printInfo()` method. This method should neatly print all relevant information about the Pony to the console.
-
-### Pony Interactions
-Ponies can interact! Implement a method called `performMagic()` where one Pony can perform magic on another. The effect of the magic can vary based on your creativity (e.g., increasing happiness, changing energy levels). Ensure your method reflects these changes and prints a summary of the action.
-
-### Understanding Variable Shadowing
-Variable shadowing can lead to confusion. Look into provided examples, understand the concept, and be prepared to discuss solutions.
+### Bonus Task: Variable Shadowing
+Explore the concept of variable shadowing in Java by creating a scenario where local variables in methods shadow instance variables. Document how you resolve this issue using the `this` keyword.
 
 ## Checklist
-- Create individual Ponies within the main method (optional step).
-- Define class fields for the Pony class.
-- Utilize getters and setters for manipulating Pony instances.
-- Implement a constructor for efficient Pony instantiation.
-- Develop a `printInfo()` method for easy information display.
-- Implement a `performMagic()` method for Pony interactions.
-- Investigate variable shadowing examples and understand how to address them.
+- Created a SpaceVehicle class with specified attributes and methods.
+- Developed a CelestialBody class with relevant properties.
+- Implemented interactions between Space Vehicle and Celestial Bodies through travel methods.
+- Added functionality for a space vehicle race to a celestial body.
+- Explored and documented the resolution of variable shadowing in the context of your task.
 
-## Found an Issue?
-If you encounter inconsistencies or errors in the assignment, please open a new issue with a descriptive title and a summary of the problem. Contributions are appreciated and will be recognized in the acknowledgments section.
+## Submission Guide
+Ensure your code is well-commented and adheres to the submission guidelines provided in your course instructions. Package your Java files and any additional documentation into a zip file or use the submission system as specified by your instructor.
+
+## Help
+If you encounter any difficulties, first consult with your classmates. Should problems persist, please open a new issue in the course's issue tracker with a detailed description of your problem. 
