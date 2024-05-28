@@ -1,91 +1,74 @@
-# Spotify Playlist Manager
+# Horse Ranch Simulator
 
 ### Deadline
-This work should be completed before the next exercise session.
+Complete this assignment before the next class.
 
 ### Instructions
-Please see the assignments section of the course instructions for how to do and submit this assignment.
+For guidance on how to do and submit this exercise, please refer to the assignments section of the course webpage.
 
 ### Preparation
-
-- Read and answer all questions in Module 2: Looking Inside Classes.
-- Access the OLI material through Canvas or the provided webpage.
-
-**Note:** The OLI material and tasks might not align perfectly this year, so feel free to explore upcoming sections if needed.
+- Study the section on "Object-Oriented Programming" to understand the basics of Java classes, objects, and methods.
+- Refer to online resources or textbooks for additional information on getters and setters, constructor methods, and the `main` method in Java.
 
 ### Learning Goals
-
-This week you will practice:
-* Designing Java classes for a specific purpose
-* Adding instance variables to a class
-* Creating a constructor method
-* Implementing *getters* and *setters* for class fields
-* Object interaction using the dot operator
-* Outputting data to the terminal
-* Utilizing the `main` method effectively
-* Understanding scope and variable shadowing
+After completing this task, you should be comfortable with:
+* Creating and using Java classes
+* Handling instance variables
+* Implementing constructors
+* Writing getter and setter methods
+* Understanding and using the `main` method in Java
+* Grasping the concept of scope and variable shadowing
 
 ### Troubleshooting Guide
-
-Follow this approach for any questions or problems:
-
-1. Check this week's posted issues to see if other students have encountered the same problem.
-2. If not, create a new issue with a descriptive title.
-3. Ask a TA for help during the weekly lab session.
-
-Collaboration is encouraged, but **do not share answers**.
+1. First, check if other students have faced similar issues by looking at the course's online Q&A forum.
+2. If your problem is new, post your question on the forum. Make sure your question is specific and includes a clear description of the problem.
+3. Consult your TA during the lab session for immediate assistance.
 
 ### Assignment
 
-Imagine you are creating a simple playlist manager for Spotify users. Users can create playlists, add songs, and display playlist contents.
+Imagine you're in the scenic countryside, tasked with managing a bustling horse ranch. Your job is to create a Java program that models the horses and their interactions at the ranch.
 
-#### Exercise 1: Create the Song Class
+#### Horse.java
+Start by creating a Java file called `Horse.java`. This file will host the `Horse` class, encapsulating all the necessary attributes and behaviors of a horse.
 
-Create a new Java file named `Song.java` in the `src` folder. Define the `Song` class within it, and add the following fields:
+Each horse should have the following attributes (variables):
+- `String` name
+- `int` age
+- `int` speed
+- `double` health
+- `boolean` trained
 
-- `String` title
-- `String` artist
-- `int` duration (in seconds)
-- `String` album
+Inside the `Horse` class, populate it with the appropriate Java code sections to reflect the attributes above. Begin by simply declaring these variables within the class scope but outside of any methods.
 
-#### Exercise 2: Define a Playlist Class
+#### Main Method and Object Creation
+Create a `main` method in `Horse.java`, where you will construct and manipulate instances of the `Horse` class. Start by creating a horse named "Blaze" with placeholder values for its attributes directly in the `main` method.
 
-In another file, `Playlist.java`, define the `Playlist` class with the following:
+#### Getters and Setters
+To adhere to good encapsulation practices, modify the access control of your horse attributes to private. Then, implement getter and setter methods for each attribute. These methods will control the access to the horse's attributes, allowing you to read and modify their values safely.
 
-- A name for the playlist
-- A list (use an `ArrayList` for this) to store songs
+#### Constructor
+Introduce a constructor method to the `Horse` class that allows for setting all of the horse's attributes at the time of its creation. Utilize this constructor in the `main` method to streamline the creation of your horse objects.
 
-#### Exercise 3: Constructors
+#### Displaying Horse Information
+Implement a method called `displayInfo()` in the `Horse` class. This method should print out all the horse's attributes in a friendly, readable format to the console.
 
-Add constructors to both your `Song` and `Playlist` classes to initialize the objects with provided values. For the `Playlist`, initialize the list and set its name.
+#### Horse Interactions: Speed Competition
+Now let's simulate a race! Create another method in the `Horse` class called `race` that accepts another `Horse` object as a parameter. The method should compare the `speed` attributes of the two horses, update their `health` based on the exertion of the race, and print out the winner. Implement logic to ensure that the race affects each horse's `health` appropriately.
 
-#### Exercise 4: Getters and Setters
+#### Finalizing Your Ranch Simulator
+Create two additional horse objects in your `main` method, assigning them different attribute values through the constructor. Test the `race` method by having them compete against each other.
 
-For both classes, create *getters* and *setters* for all fields. Remember the boolean conventions for getters (`is` instead of `get`).
-
-#### Exercise 5: Adding Songs to Playlists
-
-In the `Playlist` class, implement a method `addSong()` that takes a `Song` object and adds it to the playlist's song list.
-
-#### Exercise 6: Displaying Playlist Contents
-
-Implement a method in the `Playlist` class that prints all the songs in the playlist, showing title, artist, and duration in a readable format.
-
-#### Exercise 7: Main Method Testing
-
-In a separate `Main.java` file, demonstrate the creation of a `Playlist`, add a few songs to it, and then display its contents.
-
-#### Exercise 8: Enhancing Song Information
-
-Add a method to the `Song` class that converts the duration from seconds into a more readable format (minutes and seconds) and include this in the playlist display output.
+#### Understanding Scope: Variable Shadowing
+Review and comprehend the concept of variable shadowing within the context of class methods, particularly in constructors and setters. Understand how the `this` keyword can be used to distinguish between instance variables and method or constructor parameters.
 
 ### Checklist
-- Create the `Song` and `Playlist` classes with relevant fields.
-- Implement constructors for instantiating your objects.
-- Write getters and setters for managing field access.
-- Add functionality for adding songs to a playlist.
-- Implement playlist content display functionality.
-- Convert song duration from seconds to minutes and seconds in display output.
+- Created a `Horse` class with the specified attributes and access control.
+- Implemented getter and setter methods for all attributes.
+- Added a constructor to the `Horse` class for initializing new objects.
+- Created a method to display a horse's information.
+- Designed a method for simulating horse races and demonstrating interaction between horse objects.
+- Explored the concept of variable shadowing and the use of the `this` keyword.
 
 ### Bugs and Errors
-If you find any inconsistencies or errors in this exercise, please open a new issue with the title "Error: summary of the error". Reported bugs will be acknowledged in the acknowledgments section.
+
+Report any inconsistencies or errors found in this exercise on the course's Q&A forum. Contributions to refining this assignment are appreciated and acknowledged in the course materials.
