@@ -1,90 +1,91 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Spotify Playlist Manager
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+### Deadline
+This work should be completed before the next exercise session.
 
-## Deadline
-This assignment is due before the next scheduled class.
+### Instructions
+Please see the assignments section of the course instructions for how to do and submit this assignment.
 
-## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+### Preparation
 
-## Preparation
+- Read and answer all questions in Module 2: Looking Inside Classes.
+- Access the OLI material through Canvas or the provided webpage.
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
+**Note:** The OLI material and tasks might not align perfectly this year, so feel free to explore upcoming sections if needed.
 
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+### Learning Goals
 
-## Learning Goals
+This week you will practice:
+* Designing Java classes for a specific purpose
+* Adding instance variables to a class
+* Creating a constructor method
+* Implementing *getters* and *setters* for class fields
+* Object interaction using the dot operator
+* Outputting data to the terminal
+* Utilizing the `main` method effectively
+* Understanding scope and variable shadowing
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+### Troubleshooting Guide
 
-## Troubleshooting Guide
+Follow this approach for any questions or problems:
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+1. Check this week's posted issues to see if other students have encountered the same problem.
+2. If not, create a new issue with a descriptive title.
+3. Ask a TA for help during the weekly lab session.
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Collaboration is encouraged, but **do not share answers**.
 
-## Assignment Details
+### Assignment
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+Imagine you are creating a simple playlist manager for Spotify users. Users can create playlists, add songs, and display playlist contents.
 
-### Task 1: Class Creation
+#### Exercise 1: Create the Song Class
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+Create a new Java file named `Song.java` in the `src` folder. Define the `Song` class within it, and add the following fields:
 
-### Task 2: Defining Properties
+- `String` title
+- `String` artist
+- `int` duration (in seconds)
+- `String` album
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+#### Exercise 2: Define a Playlist Class
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+In another file, `Playlist.java`, define the `Playlist` class with the following:
 
-### Task 3: Spawning Galaxy Pets
+- A name for the playlist
+- A list (use an `ArrayList` for this) to store songs
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+#### Exercise 3: Constructors
 
-### Task 4: Encapsulation with Getters and Setters
+Add constructors to both your `Song` and `Playlist` classes to initialize the objects with provided values. For the `Playlist`, initialize the list and set its name.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+#### Exercise 4: Getters and Setters
 
-### Task 5: Constructing with Constructors
+For both classes, create *getters* and *setters* for all fields. Remember the boolean conventions for getters (`is` instead of `get`).
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+#### Exercise 5: Adding Songs to Playlists
 
-### Task 6: Display Information
+In the `Playlist` class, implement a method `addSong()` that takes a `Song` object and adds it to the playlist's song list.
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+#### Exercise 6: Displaying Playlist Contents
 
-### Task 7: The Cosmic Challenge
+Implement a method in the `Playlist` class that prints all the songs in the playlist, showing title, artist, and duration in a readable format.
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+#### Exercise 7: Main Method Testing
 
-### Task 8: Understanding Scope and Shadowing
+In a separate `Main.java` file, demonstrate the creation of a `Playlist`, add a few songs to it, and then display its contents.
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+#### Exercise 8: Enhancing Song Information
 
-## Final Checklist
+Add a method to the `Song` class that converts the duration from seconds into a more readable format (minutes and seconds) and include this in the playlist display output.
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
+### Checklist
+- Create the `Song` and `Playlist` classes with relevant fields.
+- Implement constructors for instantiating your objects.
+- Write getters and setters for managing field access.
+- Add functionality for adding songs to a playlist.
+- Implement playlist content display functionality.
+- Convert song duration from seconds to minutes and seconds in display output.
 
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+### Bugs and Errors
+If you find any inconsistencies or errors in this exercise, please open a new issue with the title "Error: summary of the error". Reported bugs will be acknowledged in the acknowledgments section.
